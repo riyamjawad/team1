@@ -63,7 +63,7 @@ export default function Header() {
                      
   const Logo = (
     <Typography variant="h6" component="h1" className={logo}>
-      Femmecubator
+      Eventio
     </Typography>
   );
                      
