@@ -3,7 +3,7 @@ class Footer extends React.Component {
     render() {
       return (
         <div>
-          Bye World!
+          This is the Footer!
         </div>
       );
     }
