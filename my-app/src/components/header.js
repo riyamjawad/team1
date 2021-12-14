@@ -55,13 +55,13 @@ export default function Header() {
   const displayDesktop = () => {
     return (
       <Toolbar>
-        {femmecubatorLogo}
+        {Logo}
         <div>{getMenuButtons()}</div>
       </Toolbar>
     );
   };
                      
-  const femmecubatorLogo = (
+  const Logo = (
     <Typography variant="h6" component="h1" className={logo}>
       Femmecubator
     </Typography>

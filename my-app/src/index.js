@@ -2,16 +2,26 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Header from './components/Header'
-import Footer from './components/Footer'
+import Header from './components/header.js'
+import About from './components/about.js'
+import Contact from './components/contact.js'
+import Team from './components/team.js'
+import Solutions from './components/solutions.js'
+import Footer from './components/footer.js'
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
     <Header/>
-    <App />
+    <Routes>
+    <Route path="/about" element={<About/>} />
+    <Route path="/contactus" element={<Contact/>} />
+    <Route path="/solutions" element={<Solutions/>} />
+    <Route path="/team" element={<Team/>} />
+    <Route path="/" element={<App/>} />
+    </Routes>
     <Footer/>
     </Router>
   </React.StrictMode>,
